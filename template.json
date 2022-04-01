@@ -8929,7 +8929,7 @@
             }]
         },
         {
-            "type":"1",
+            "type":1,
             "title":"Greenmail",
             "description":"Greenmail mock mail server",
             "categories": [ "development" ],
