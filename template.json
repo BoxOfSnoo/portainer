@@ -8758,6 +8758,7 @@
             ],
             "description": "Microsoft SQL Server on Linux",
             "env": [{
+                    "label": "Accept EULA?",
                     "name": "ACCEPT_EULA",
                     "set": "Y"
                 },
