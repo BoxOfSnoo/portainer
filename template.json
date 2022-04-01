@@ -8929,12 +8929,11 @@
             }]
         },
         {
-            "categories": [
-                "development"
-            ],
-            "description":"Greenmail mock mail server",
             "type":"1",
             "title":"Greenmail",
+            "description":"Greenmail mock mail server",
+            "categories": [ "development" ],
+            "platform":"linux",
             "name":"greenmail",
             "image":"greenmail/standalone",
             "logo":"https://raw.githubusercontent.com/greenmail-mail-test/greenmail/master/docs/images/logo.png",
@@ -8948,8 +8947,29 @@
                 "9180:8080/tcp"
             ],
             "restart_policy":"unless-stopped",
-            "platform":"linux",
-            "note": "See https://docs.portainer.io/v/ce-2.6/advanced/app-templates/format and https://hub.docker.com/r/greenmail/standalone/"
-        }
+            "note": "See https://hub.docker.com/r/greenmail/standalone/"
+        },
+        {
+            "type": 1,
+            "title": "SQL Server",
+            "description": "Microsoft SQL Server on Linux",
+            "categories": ["database"],
+            "platform": "linux",
+            "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
+            "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
+            "image": "mcr.microsoft.com/mssql/server:2019-latest",
+            "ports": ["1433/tcp"],
+            "env": [
+                {
+                  "name": "ACCEPT_EULA",
+                  "default": "Y",
+                  "preset": true
+                },
+                {
+                  "name": "SA_PASSWORD",
+                  "label": "SA password"
+                }
+            ]
+        }        
     ]
 }
