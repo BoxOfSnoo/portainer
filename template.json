@@ -8927,6 +8927,29 @@
             "volumes": [{
                 "container": "/var/lib/wowza"
             }]
+        },
+        {
+            "categories": [
+                "development"
+            ],
+            "description":"Greenmail mock mail server",
+            "type":"1",
+            "title":"Greenmail",
+            "name":"greenmail",
+            "image":"greenmail/standalone",
+            "logo":"https://raw.githubusercontent.com/greenmail-mail-test/greenmail/master/docs/images/logo.png",
+            "ports": [
+                "3025:3025/tcp",
+                "3110:3110/tcp",
+                "3143:3143/tcp",
+                "3465:3465/tcp",
+                "3993:3993/tcp",
+                "3995:3995/tcp",
+                "9180:8080/tcp"
+            ],
+            "restart_policy":"unless-stopped",
+            "platform":"linux",
+            "note": "See https://docs.portainer.io/v/ce-2.6/advanced/app-templates/format and https://hub.docker.com/r/greenmail/standalone/"
         }
     ]
 }
