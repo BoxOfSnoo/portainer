@@ -8767,7 +8767,7 @@
                     "name": "SA_PASSWORD"
                 }
             ],
-            "image": "microsoft/mssql-server-linux:2017-GA",
+            "image": "mcr.microsoft.com/mssql/server:2019-latest",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
             "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
             "platform": "linux",
@@ -8781,44 +8781,22 @@
             "categories": [
                 "database"
             ],
-            "description": "Microsoft SQL Server Developer for Windows containers",
+            "description": "Microsoft SQL Server Express",
             "env": [{
+                    "label": "Accept EULA?",                
                     "name": "ACCEPT_EULA",
                     "set": "Y"
                 },
                 {
                     "label": "SA password",
-                    "name": "sa_password"
-                }
-            ],
-            "image": "microsoft/mssql-server-windows-developer:latest",
-            "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
-            "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
-            "platform": "windows",
-            "ports": [
-                "1433/tcp"
-            ],
-            "title": "SQL Server",
-            "type": 1,
-            "volumes": [{
-                "container": "C:/temp/"
-            }]
-        },
-        {
-            "categories": [
-                "database"
-            ],
-            "description": "Microsoft SQL Server Express for Windows containers",
-            "env": [{
-                    "name": "ACCEPT_EULA",
-                    "set": "Y"
+                    "name": "SA_PASSWORD"
                 },
                 {
-                    "label": "SA password",
-                    "name": "sa_password"
+                    "name": "MSSQL_PID",
+                    "set": "Express"
                 }
             ],
-            "image": "microsoft/mssql-server-windows-express:latest",
+            "image": "mcr.microsoft.com/mssql/server:2019-latest",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
             "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
             "platform": "windows",
@@ -8826,10 +8804,7 @@
                 "1433/tcp"
             ],
             "title": "SQL Server Express",
-            "type": 1,
-            "volumes": [{
-                "container": "C:/temp/"
-            }]
+            "type": 1
         },
         {
             "categories": [
