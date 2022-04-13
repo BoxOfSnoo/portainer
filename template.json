@@ -8772,7 +8772,7 @@
             "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
             "platform": "linux",
             "ports": [
-                "1433/tcp"
+                "1433:1433/tcp"
             ],
             "title": "SQL Server",
             "type": 1
@@ -8801,7 +8801,7 @@
             "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
             "platform": "linux",
             "ports": [
-                "1433/tcp"
+                "1433:1433/tcp"
             ],
             "title": "SQL Server Express",
             "type": 1
