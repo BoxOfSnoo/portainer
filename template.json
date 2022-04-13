@@ -8799,7 +8799,7 @@
             "image": "mcr.microsoft.com/mssql/server:2019-latest",
             "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
             "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
-            "platform": "windows",
+            "platform": "linux",
             "ports": [
                 "1433/tcp"
             ],
